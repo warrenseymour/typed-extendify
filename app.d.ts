@@ -1,4 +1,4 @@
-import {merge} from 'lodash';
+declare type merge = <T, U>(dest: T, source: U) => T & U;
 
 declare function extendify(options?: extendify.CustomizeOptions): merge;
 
